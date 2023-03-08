@@ -13,24 +13,22 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #023373;
+  background-color: #F9EEFF;
 }
 body .card {
-  width: 50%;
-  height: 50%;
   display: flex;
   flex-direction: column;
-  background-color: #F9EEFF;
   border-radius: 1rem;
-  overflow: hidden;
 }
 body .card header {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #049DBF;
-  padding: 1rem 0;
+  background-color: #023373;
+  padding: 1rem 4rem;
+  box-sizing: border-box;
+  border-radius: 2rem 0 0;
 }
 body .card header p {
   font-size: 2.5rem;
@@ -66,6 +64,7 @@ body .card main .container {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 2rem 0;
 }
 body .card main .container .social-media {
   width: 25%;
@@ -75,18 +74,27 @@ body .card main .container .social-media {
   padding: 1rem;
 }
 body .card main .container .social-media svg {
-  width: 100%;
-  height: 100%;
+  min-width: 2.5rem;
   fill: #049DBF;
+  transition: all 0.3s ease-in-out;
+}
+body .card main .container .social-media svg:hover {
+  transform: scale(1.2);
+  fill: #023373;
 }
 body .card footer {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   background-color: #049DBF;
   padding: 3rem 0;
-  color: #F9EEFF;
+  border-radius: 0 0 2rem 0;
+}
+body .card footer svg {
+  max-width: 5rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  fill: #F9EEFF;
 }
 
 /*# sourceMappingURL=style.css.map */
